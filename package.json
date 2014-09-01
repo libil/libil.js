@@ -1,0 +1,25 @@
+{
+  "name": "libil",
+  "version": "0.1.0",
+  "description": "Libil is a Javascript module for converting string using Bahasa Walikan rules. Can be done for Jogja or Malang style.",
+  "main": "./libil",
+  "scripts": {
+    "test": "mocha --reporter nyan"
+  },
+  "keywords": [
+    "libil",
+    "jogja",
+    "malang",
+    "walikan"
+  ],
+  "author": "Didiet Noor <lynxluna@gmail.com> (http://github.com/lynxluna)",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "mocha": "^1.21.4"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/lynxluna/libil.js.git"
+  }
+}
