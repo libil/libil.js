@@ -1,6 +1,6 @@
 {
   "name": "libil",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Libil is a Javascript module for converting string using Bahasa Walikan rules. Can be done for Jogja or Malang style.",
   "main": "./libil",
   "scripts": {

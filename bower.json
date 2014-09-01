@@ -1,0 +1,25 @@
+{
+  "name": "libil",
+  "main": "lib/libil.js",
+  "version": "0.1.1",
+  "homepage": "https://github.com/lynxluna/libil.js",
+  "authors": [
+    "Didiet Noor <lynxluna@gmail.com>"
+  ],
+  "description": "Libil is a Javascript Library for Bahasa Walikan Yogya or Malang",
+  "keywords": [
+    "walikan",
+    "yogya",
+    "malang",
+    "libil"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "browser_test"
+  ]
+}

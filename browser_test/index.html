@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Libil Browser Demo</title>
+
+    <!-- Bootstrap -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      .biginput {
+        font-size: 24pt;
+        height: 50px;
+        line-height: 1.33;
+      }
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+    <script src="bower_components/respond/dest/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center">Libil Browser Demo</h1>
+      <form role="form">
+        <div class="form-group">
+          <label for="srcText">Source Text <span style="color:red" id="errorMsg">Write Longer Text!</span></label>
+          <input type="text" class="form-control biginput" id="srcText" placeholder="Source Text Here">
+        </div>
+        <div class="form-group">
+          <label for="encodedText">Walikan Jogja</label>
+          <input type="text" class="form-control biginput" id="encodedText" disabled>
+        </div>
+        <div class="form-group">
+          <label for="malangText">Walikan Malang</label>
+          <input type="text" class="form-control biginput" id="malangText" disabled>
+        </div>
+      </form>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/bacon/dist/Bacon.js"></script>
+    <script src="bower_components/bacon.model/dist/bacon.model.js"></script>
+    <script src="bower_components/bacon.jquery/dist/bacon.jquery.js"></script>
+    <script src="libil.js"></script>
+    <script>
+      srcText = Bacon.$.textFieldValue($("#srcText"));
+      srcTextValid = srcText.map(function(x) { return x.length >= 3; });
+       
+      srcTextValid.onValue(function(e) {
+        if (e) {
+          $("#encodedText").val(Libil.convert($("#srcText").val()));
+          $("#malangText").val(Libil.convert($("#srcText").val(), true));
+          $("#errorMsg").hide(200);
+        }
+        else {
+          $("#encodedText").val("");
+          $("#malangText").val("");
+          $("#errorMsg").show();
+        }
+      }); 
+    </script>
+  </body>
+</html>

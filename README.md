@@ -25,18 +25,32 @@ $ npm install libil
 Just `require` in your nodejs app
 
 ```javascript
-libil = require('libil')
+Libil = require('libil')
 
 // Converting sentences
-libil.convert("Aku bali"); // Panyu sangi 
+Libil.convert("Aku bali"); // Panyu sangi 
 
 // For Malang mode, add `true` in as last parameter
-libil.convert("Pulang Surabaya dari Malang", true);
+Libil.convert("Pulang Surabaya dari Malang", true);
   // Ngalup Ayabarus idar Ngalam
 
 ```
 
+If you're using browser, just include `libil.js` in your page
 
+```html
+<script src="libil.js"></script>
+
+<script>
+$("#destInput").val(Libel.convert($("srcValue").val()))
+</script>
+```
+
+It's also available as bower package
+
+```bash
+$ bower install libil
+```
 ## License
 
 The MIT License (MIT)
