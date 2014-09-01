@@ -2,7 +2,8 @@
 
 [![Build Status](https://travis-ci.org/lynxluna/libil.js.svg?branch=master)](https://travis-ci.org/lynxluna/libil.js)
 
-This is the counterparts of [libil](https://github.com/lynxluna/libil) library for Node.js
+This is the counterparts of [libil](https://github.com/lynxluna/libil) library written in JavaScript for both Node.js
+and Browser
 
 ## Installation
 
@@ -42,7 +43,7 @@ If you're using browser, just include `libil.js` in your page
 <script src="libil.js"></script>
 
 <script>
-$("#destInput").val(Libel.convert($("srcValue").val()))
+$("#destInput").val(Libil.convert($("srcValue").val()))
 </script>
 ```
 
