@@ -14,6 +14,12 @@ libil.js is packaged as npm module, to install just add 'libil' in the dependenc
   }
 ```
 
+or install manually using `npm`
+
+```bash
+$ npm install libil
+```
+
 ## Usage
 
 Just `require` in your nodejs app
@@ -25,7 +31,7 @@ libil = require('libil')
 libil.convert("Aku bali"); // Panyu sangi 
 
 // For Malang mode, add `true` in as last parameter
-libil.convert("Pulang Surabaya dari Malang");
+libil.convert("Pulang Surabaya dari Malang", true);
   // Ngalup Ayabarus idar Ngalam
 
 ```
