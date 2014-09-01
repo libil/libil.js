@@ -1,5 +1,7 @@
 # libil.js
 
+[![Build Status](https://travis-ci.org/lynxluna/libil.js.svg?branch=master)](https://travis-ci.org/lynxluna/libil.js)
+
 This is the counterparts of [libil](https://github.com/lynxluna/libil) library for Node.js
 
 ## Installation

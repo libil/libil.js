@@ -4,7 +4,7 @@
   "description": "Libil is a Javascript module for converting string using Bahasa Walikan rules. Can be done for Jogja or Malang style.",
   "main": "./libil",
   "scripts": {
-    "test": "mocha --reporter nyan"
+    "test": "mocha --reporter spec"
   },
   "keywords": [
     "libil",
