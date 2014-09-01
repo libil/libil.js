@@ -1,5 +1,5 @@
 var should = require('chai').should(),
-    libil  = require('../libil');
+    libil  = require('../index');
 
 describe('Tokenizing Word to Tokens', function() {
   it ('tokenize lowercase strings', function() {
