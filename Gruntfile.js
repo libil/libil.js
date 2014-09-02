@@ -10,9 +10,18 @@ module.exports = function(grunt) {
         src: 'lib/<%= pkg.name %>.js',
         dest: 'dist/<%= pkg.name %>.min.js'
       }
+    },
+    copy: {
+      main: {
+        src:"lib/libil.js",
+        dest: "dist/", 
+        expand: true,
+        flatten: true
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.registerTask('default', ['uglify']);
+  grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.registerTask('default', ['uglify', 'copy']);
 }
