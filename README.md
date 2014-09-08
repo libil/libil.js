@@ -52,6 +52,15 @@ It's also available as bower package
 ```bash
 $ bower install libil
 ```
+
+### CDN
+
+Thanks to [CDNJS](http://github.com/cdnjs) you're now able to include libil in your apps by including its CDN URL
+
+```html
+<script src="https://cdnjs.cloudflare.com/ajax/libs/libil/0.1.2/libil.min.js"> </script>
+```
+
 ## License
 
 The MIT License (MIT)
